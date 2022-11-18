@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <nav class="navegador">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Ingresar</a></li>
+        </ul>
+    </nav>
+
+    <div class="name">
+        <h4>Nombre(s)</h4>
+        <input id="name" type="text">
+    </div>
+
+    <div class="lname">
+        <h4>Apellidos</h4>
+        <input id="lname" type="text">
+    </div>
+
+    <div class="user">
+        <h4>Usuario</h4>
+        <input id="user" type="text">
+    </div>
+
+    <div class="password">
+        <h4>Contraseña</h4>
+        <input id="password" type="password">
+    </div>
+    
+    <form action="perfil.html">
+        <button onclick="registrar()">Registrarse</button>
+    </form>
+</body>
+</html>

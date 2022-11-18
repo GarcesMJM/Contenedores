@@ -1,0 +1,8 @@
+FROM ubuntu
+RUN apt install python3.10 -y 
+RUN apt install python3-pip -y 
+RUN pip3.10 install flask 
+COPY app.py /Website-python/
+WORKDIR /Website-python/perfil.html
+EXPOSE 80
+CMD python3.10 pagina.py
