@@ -1,13 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return render_template('index.php')
+    return render_template('index.html')
 
 @app.route('/registrar')
-def registrar(): 
+def registrar():    
     return render_template('registrar.html')
 
 @app.route('/perfil')
