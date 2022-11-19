@@ -2,7 +2,12 @@ FROM ubuntu
 RUN apt install python3.10 -y 
 RUN apt install python3-pip -y 
 RUN pip3.10 install flask 
-COPY Website-python/python/ /Website-python/
+COPY app.py /Website/app.py
+COPY templates/index.php /Website/index.php
+COPY templates/registrar.php /Website/registrar.php
+COPY templates/perfil.php /Website/perfil.php
 WORKDIR /Website-python/python/
 EXPOSE 80
-CMD python3.10 app.py
+CMD python3.10 /Website/app.py
+FROM php:7.4-apache
+COPY templates/ /var/www/html/

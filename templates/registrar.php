@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <link rel="stylesheet" type="text/css" href="estilosphp-registrar.css">
 </head>
 <body>
     <nav class="navegador">
@@ -38,6 +37,107 @@
             </form>
         </div>
 </body>
+<style>
+    *{
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+    body {
+        margin: 0;
+        /*border: 1px solid black;*/
+    }
+    
+    .navegador ul{
+        margin-top: 0px;
+        padding-top: 20px;
+        background-color: black;
+        width: 97%;
+        height: 40px;
+        
+    }
+    
+    .navegador ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .navegador ul li a:hover{
+        
+        font-size: 18px;
+        transition: .5s;
+    }
+    
+    .box {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 25px;
+        margin: 70px 500px 100px 500px;
+        position: relative;
+        text-align: center;
+        top: 50px;
+    }
+    
+    /*text-align: center;
+        position: relative;
+        top: 150px;
+        border: 1px solid black;
+        padding: 0px;
+        margin: 0px;
+        background: green;*/
+    
+    /*ESPACIO ENTRE FORM*/
+    
+    .box .name {
+        margin-bottom: 25px;
+        /*border: 1px solid black;*/
+    }
+    .box .name input {
+        width: 250px;
+        height: 30px;
+    }
+    
+    .box .lname {
+        margin-bottom: 25px;
+    }
+    .box .lname input {
+        width: 250px;
+        height: 30px;
+    }
+    
+    
+    .box .User {
+        margin-bottom: 25px;
+    }
+    .box .User input {
+        width: 250px;
+        height: 30px;
+    }
+    
+    
+    .box .Password {
+        margin-bottom: 25px;
+    }
+    .box .Password input {
+        width: 250px;
+        height: 30px;
+    }
+    
+    .box .boton {
+    
+        margin-top: 25px;
+        width: 150px;
+        height: 30px;
+    
+    }
+    
+    .box .boton:hover {
+    
+        width: 160px;
+        height: 35px;
+        transition: .5s;
+    
+    }
+</style>
 </html>
 
 <?php   
