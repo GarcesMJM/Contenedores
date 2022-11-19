@@ -6,4 +6,4 @@ services:
     ports:
       - "80:80"
     command: 
-      python3.10  /myapp/app.py
+      python3.10  /Website-python/app.py

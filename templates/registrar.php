@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
+    <link rel="stylesheet" type="text/css" href="estilosphp-registrar.css">
 </head>
 <body>
     <nav class="navegador">
@@ -15,25 +16,25 @@
         <div class="box">
             <form action="" method="POST">
                 <div class="name">
-                    <label>Nombre(s)</label>
+                    <!--<label>Nombre(s)</label>-->
                     <input name="name" id="name" type="text">
                 </div>
             
                 <div class="lname">
-                    <label>Apellidos</label>
+                    <!--<label>Apellidos</label>-->
                     <input name="lname" type="text">
                 </div>
             
                 <div class="User">
-                    <label>Usuario</label>
+                    <!--<label>Usuario</label>-->
                     <input name="user" id="user" type="text">
                 </div>
             
                 <div class="Password">
-                    <label>Contraseña</label>
+                    <!--<label>Contraseña</label>-->
                     <input name="password" id="password" type="password">
                 </div>
-                <input type="submit" value ="Registar">
+                <input class="boton" type="submit" value ="Registar">
             </form>
         </div>
 </body>

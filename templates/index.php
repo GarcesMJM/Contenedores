@@ -53,7 +53,8 @@
                         fclose($file);
                         print "<script>window.setTimeout(function() { window.location = 'index.php' });
                         alert('Se encontró el usuario exitosamente')</script>";
-                        
+                        $salida = shell_exec('prendercontenedor.sh');
+                        shell_exec('sudo docker run -it -p 80:80 ubuntu')
                         return $user;
                     }
                 }
